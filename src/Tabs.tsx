@@ -1,4 +1,5 @@
 import { ListToTask } from "./ListToTask";
+import ObjectKeyExtractor from "./ObjectKeyExtractor";
 
 export const Tabs = () => {
     return (
@@ -9,7 +10,7 @@ export const Tabs = () => {
             <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#listToTaskList" type="button" role="tab" aria-controls="profile" aria-selected="false">List to Tasklist</button>
         </li>
         <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#other-tool" type="button" role="tab" aria-controls="profile" aria-selected="false">Some Other Tool</button>
+            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#other-tool" type="button" role="tab" aria-controls="profile" aria-selected="false">Object Key Extractor</button>
         </li>
     </ul>
 </div>
@@ -19,7 +20,7 @@ export const Tabs = () => {
         <ListToTask />
     </div>
         <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="other-tool" role="tabpanel" aria-labelledby="profile-tab">
-    <p class="text-4xl text-green-700 text-center py-20">Another tool would come here</p>
+    <p class="text-4xl text-green-700 text-center py-20"><ObjectKeyExtractor /></p>
     </div>
 </div>
 </>
