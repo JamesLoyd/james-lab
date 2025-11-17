@@ -1,5 +1,6 @@
 import { ListToTask } from "./ListToTask";
 import ObjectKeyExtractor from "./ObjectKeyExtractor";
+import MarkdownListToColumn from "./MarkdownListToColumn";
 
 export const Tabs = () => {
     return (
@@ -12,6 +13,9 @@ export const Tabs = () => {
         <li class="me-2" role="presentation">
             <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#other-tool" type="button" role="tab" aria-controls="profile" aria-selected="false">Object Key Extractor</button>
         </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#markdownListToColumn" type="button" role="tab" aria-controls="profile" aria-selected="false">Markdown List to Column</button>
+        </li>
     </ul>
 </div>
 <div id="default-tab-content">
@@ -21,6 +25,9 @@ export const Tabs = () => {
     </div>
         <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="other-tool" role="tabpanel" aria-labelledby="profile-tab">
     <p class="text-4xl text-green-700 text-center py-20"><ObjectKeyExtractor /></p>
+    </div>
+            <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="markdownListToColumn" role="tabpanel" aria-labelledby="profile-tab">
+    <p class="text-4xl text-green-700 text-center py-20"><MarkdownListToColumn /></p>
     </div>
 </div>
 </>
